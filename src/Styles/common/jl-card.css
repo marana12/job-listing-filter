@@ -1,0 +1,11 @@
+@import './pills/js-pill-primary.css';
+@import './pills/js-pill-secondary.css';
+
+.jl-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 7px;
+    min-height: 50px;
+    box-shadow: 0 5px 20px var(--DarkGrayishCyan);
+    padding: 12px 20px;
+}

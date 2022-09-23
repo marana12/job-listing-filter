@@ -1,0 +1,6 @@
+.cards__lists{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-top: calc(var(--header-heigth) - var(--card-min-height));
+}

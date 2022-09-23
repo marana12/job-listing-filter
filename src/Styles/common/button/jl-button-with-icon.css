@@ -1,0 +1,22 @@
+@import './jl-button.css';
+
+.jl-button.jl-button--with-icon {
+    padding: 0;
+    padding-left: 10px;
+}
+
+.jl-button.jl-button--with-icon:hover{
+    background-color: var(--LightGrayishCyanBG);
+    color: var(--DesaturatedDarkCyan);
+}
+
+.jl-button--with-icon .jl-button__icon {
+    background-color: var(--DesaturatedDarkCyan);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.jl-button.jl-button--with-icon:hover .jl-button__icon {
+    background-color: #000;
+}

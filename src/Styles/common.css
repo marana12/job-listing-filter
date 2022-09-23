@@ -1,0 +1,35 @@
+@import './common/jl-container.css';
+@import './common/svg-icons/svg-icons.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+:root{
+    
+    --DesaturatedDarkCyan:hsl(180, 29%, 50%); /* Primary */
+    --LightGrayishCyanTB:hsl(180, 52%, 96%);/*Background*/
+    --LightGrayishCyanBG:hsl(180 31% 95%);/*Filter Tablets*/
+    --DarkGrayishCyan:hsl(180, 8%, 52%);
+    --VeryDarkGrayishCyan: hsl(180, 14%, 20%);
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+    --header-heigth:155px;
+    --card-min-height:40px;
+    --font-family: 'League Spartan', sans-serif;
+    --font-size: 15px;
+    --font-weight-normal: 500;
+    --font-weight-bold: 700;
+    --container-horizontal-padding: 16px;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-normal);
+    background-color: var(--LightGrayishCyanTB);
+    color: var(--VeryDarkGrayishCyan);
+  }

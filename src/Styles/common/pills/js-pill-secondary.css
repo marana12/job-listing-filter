@@ -1,0 +1,5 @@
+@import './jl-pill.css';
+
+.jl-pill.jl-pill--secondary{
+    background-color: var(--VeryDarkGrayishCyan);
+}

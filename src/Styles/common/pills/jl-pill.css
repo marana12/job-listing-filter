@@ -1,0 +1,9 @@
+.jl-pill{
+    color: #fff;
+    font-weight: var(--font-weight-bold);
+    border-radius: 50rem;
+    padding: 5px 10px;
+    text-align: center;
+    width: fit-content;
+    font-size: 14px;
+}

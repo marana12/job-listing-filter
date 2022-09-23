@@ -1,0 +1,12 @@
+@import './jl-button.css';
+
+.jl-button.jl-button--link {
+    padding: 0;
+    background-color: transparent;
+    color: var(---DarkGrayishCyan);
+}
+
+.jl-button.jl-button--link:hover {
+    text-decoration: underline;
+    color: var(--DesaturatedDarkCyan);
+}

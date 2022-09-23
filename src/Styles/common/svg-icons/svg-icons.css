@@ -1,0 +1,11 @@
+.svg-icon {
+    vertical-align: middle;
+    display: inline-block;
+    background-size: 1em;
+    width: 1em;
+    height: 1em;
+}
+
+.svg-icon-remove {
+    background-image: url('../../../Assets/svg/icons/icon-remove.svg');
+}

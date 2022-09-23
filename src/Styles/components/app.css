@@ -1,0 +1,22 @@
+.jl-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--DesaturatedDarkCyan);;
+}
+
+.jl-header__bg {
+  background-image: url('../../Assets/svg/shapes/bg-header-mobile.svg');
+  height: var(--header-heigth);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 375px) {
+  .jl-header__bg {
+    background-image: url('../../Assets/svg/shapes/bg-header-desktop.svg');
+    background-size: cover;
+    }
+}

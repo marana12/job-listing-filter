@@ -1,0 +1,105 @@
+@import '../common/jl-card.css';
+@import '../common/button/jl-button.css';
+
+
+.card {
+    position: relative;
+    flex-direction: column;
+}
+
+.card-logo {
+    position: absolute;
+    width: 50px;
+    top: calc((50px / 2) * -1);
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    padding: calc(50px / 2) 0;
+    gap: 8px;
+    border-bottom: 1px solid var(--DarkGrayishCyan);
+  }
+ 
+  .card__info-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .card__info-title{
+    color: var(--DesaturatedDarkCyan);
+    font-weight: var(--font-weight-bold);
+    font-size: 14px;
+  }
+
+  .card__info-subtitle{
+    font-weight: var(--font-weight-bold);
+    text-transform: capitalize;
+    word-break: break-all;
+    cursor: pointer;
+  }
+
+  .card__info-subtitle:hover{
+    color: var(--DesaturatedDarkCyan);
+  }
+
+  .card__info-small-text {
+    --card-info-small-text-gap: 16px;
+
+    display: flex;
+    column-gap: var(--card-info-small-text-gap);
+    font-size: 12px;
+    color: var(--DarkGrayishCyan);
+    flex-wrap: wrap;
+  }
+
+  .card__info-small-text span + span {
+    position: relative;
+  }
+
+  .card__info-small-text span + span::before {
+    --card-info-small-text-bullet-size: 5px;
+
+    content: "";
+    width: var(--card-info-small-text-bullet-size);
+    height: var(--card-info-small-text-bullet-size);
+    border-radius: 50%;
+    background-color: var(--DarkGrayishCyan);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: calc((var(--card-info-small-text-gap) - var(--card-info-small-text-bullet-size)) * -1);
+  }
+
+  .card__skills {
+    padding-top: 25px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+@media (min-width: 375px){
+    .card {
+        flex-direction: row;
+        column-gap: 16px;
+        align-items: center;
+    }
+
+    .card-logo {
+        position:static;
+        width: fit-content;
+        height: fit-content; 
+       }
+
+    .card__info {
+        padding: 0;
+        border-bottom: 0;
+        width: 50%;
+    }
+    .card__skills{
+        padding-top: 0;
+    }
+}
