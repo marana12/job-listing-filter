@@ -5,12 +5,15 @@
 .card {
     position: relative;
     flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .card-logo {
     position: absolute;
     width: 50px;
     top: calc((50px / 2) * -1);
+    left: 20px;
 }
 
 .card__info {
@@ -81,11 +84,11 @@
     align-content: center;
   }
 
-@media (min-width: 375px){
+@media (min-width: 630px){
     .card {
-        flex-direction: row;
         column-gap: 16px;
         align-items: center;
+        grid-template-columns: 88px 1fr 1fr;
     }
 
     .card-logo {
@@ -97,7 +100,6 @@
     .card__info {
         padding: 0;
         border-bottom: 0;
-        width: 50%;
     }
     .card__skills{
         padding-top: 0;

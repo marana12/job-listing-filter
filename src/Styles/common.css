@@ -32,4 +32,5 @@ body{
     font-weight: var(--font-weight-normal);
     background-color: var(--LightGrayishCyanTB);
     color: var(--VeryDarkGrayishCyan);
+    padding-bottom: 50px;
   }

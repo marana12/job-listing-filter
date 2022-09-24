@@ -12,7 +12,7 @@ Cards.propTypes = {
 export default function Cards({data}){
     const [filtersArr, setFiltersArr] = useState([]);
     const [companyList, setCompanyList] = useState(data ?? []);
-
+    
     const searchFilters = useCallback((id, filterType, filterText) =>{
         setFiltersArr(filters => {
             const array = [...filters, {filterText, id, type: filterType}];
@@ -26,14 +26,12 @@ export default function Cards({data}){
 
     },[companyList])
 
-    const clearFilter = useCallback((filterText, type) => {
-        setFiltersArr( filters => {
-            const array = filters.filter(f => f.filterText !== filterText);
+    const clearFilter = useCallback((filterText) => {
+        const filtersArrSet = filtersArr.filter(f => f.filterText !== filterText);
+        
+        setFiltersArr(filtersArrSet)
 
-            return [...array]
-        });
-
-        if(filtersArr.length === 1){
+        if(filtersArrSet.length === 0){
             setCompanyList(data);
 
             return;
@@ -41,12 +39,12 @@ export default function Cards({data}){
 
         const filteredCompany = [];
 
-        filtersArr.forEach(value => {
+        filtersArrSet.forEach(value => {
             filteredCompany.push(filterData(value.type, value.filterText))
         });
 
         setCompanyList(...filteredCompany);
-    },[filtersArr, data]);
+    },[data, filtersArr]);
 
     const clearAllFilters = useCallback(() =>{
         setCompanyList(data);

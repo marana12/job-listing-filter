@@ -9,9 +9,9 @@ CardFilter.propTypes = {
 }
 export default function CardFilter({filters, onClearFilter, onHandlerClearAllFilters}){
     const clearHandler = useCallback((filter) =>{
-        const {filterText, type} = filter;
+        const {filterText} = filter;
         
-        onClearFilter(filterText, type);
+        onClearFilter(filterText);
         
     },[onClearFilter]);
 
