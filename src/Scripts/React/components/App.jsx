@@ -3,7 +3,8 @@ import Cards from './Cards';
 import data from '../../Common/Helper';
 
 function App() {
-
+  document.title = 'Job list filter';
+  
   return (
     <div className="app">
       <div className='jl-header'>
